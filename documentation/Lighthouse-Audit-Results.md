@@ -1,15 +1,15 @@
 # Lighthouse Audit Results
 
-Website checked: paste the GitHub Pages URL here
+Website checked: https://maurik22.github.io/pangasinanheritageact/
 
-Date checked: write the date here
+Date checked: September 2, 2026
 
 Scores:
 
-- Performance: write score here
-- Accessibility: write score here
-- Best Practices: write score here
-- SEO: write score here
+- Performance: 99
+- Accessibility: 95
+- Best Practices: 100
+- SEO: 100
 
 Targets from Activity 2:
 
