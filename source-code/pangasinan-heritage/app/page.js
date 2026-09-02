@@ -1,3 +1,4 @@
+import Link from "next/link";
 import HeaderNavigation from "../components/organisms/HeaderNavigation";
 import HeritageGrid from "../components/organisms/HeritageGrid";
 import { heritageSites } from "../data/heritage";
@@ -5,9 +6,6 @@ import { heritageSites } from "../data/heritage";
 
 
 export default function HomePage() {
-
-  const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
-
   let featured = [];
 
   for (let i = 0; i < heritageSites.length; i++) {
@@ -71,9 +69,9 @@ export default function HomePage() {
           <div className="editorialHeading">
             <span>selected places</span>
 
-            <a href={`${basePath}/heritage/`}>
+            <Link href="/heritage/">
               view all
-            </a>
+            </Link>
           </div>
 
           <HeritageGrid sites={featured} />

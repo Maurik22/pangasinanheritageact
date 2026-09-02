@@ -1,11 +1,10 @@
+import Link from "next/link";
 import ImageAtom from "../atoms/ImageAtom";
 
 export default function HeritageCard({ site }) {
-  const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
-
   return (
     <article className="heritageCard">
-      <a className="heritageCardLink" href={`${basePath}/heritage/${site.slug}/`} aria-label={`View ${site.name}`}>
+      <Link className="heritageCardLink" href={`/heritage/${site.slug}/`} aria-label={`View ${site.name}`}>
         <ImageAtom src={site.image} alt={site.alt} className="heritageImage" />
         <div className="photoShade"></div>
         <div className="photoTitle">
@@ -13,7 +12,7 @@ export default function HeritageCard({ site }) {
           <span className="titleDivider">|</span>
           <span>{site.location.split(",")[0].toLowerCase()}</span>
         </div>
-      </a>
+      </Link>
     </article>
   );
 }
