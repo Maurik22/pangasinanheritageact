@@ -2,7 +2,10 @@ import "./globals.css";
 
 export const metadata = {
   title: "Pangasinan Heritage Digital Showcase",
-  description: "A mobile-first showcase of Pangasinan heritage and tourist destinations."
+  description: "A mobile-first showcase of Pangasinan heritage and tourist destinations.",
+  icons: {
+    icon: "/icon.svg"
+  }
 };
 
 export default function RootLayout({ children }) {
