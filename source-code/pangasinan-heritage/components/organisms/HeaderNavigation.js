@@ -5,7 +5,7 @@ export default function HeaderNavigation() {
   return (
     <header className="header">
 
-      <Link href="/" className="brand">
+      <Link href="/" className="brand" prefetch={false}>
         pangasinan
         <span>heritage</span>
       </Link>

@@ -9,7 +9,7 @@ export default function HeritageDetailTemplate({ site }) {
         <p className="tinyLabel">{site.location}</p>
         <h1>{site.name}</h1>
         <p>{site.description}</p>
-        <Link className="backLink" href="/heritage/">Back to places</Link>
+        <Link className="backLink" href="/heritage/" prefetch={false}>Back to places</Link>
       </div>
     </article>
   );

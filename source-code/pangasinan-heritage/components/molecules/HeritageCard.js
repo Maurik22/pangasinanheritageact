@@ -4,7 +4,7 @@ import ImageAtom from "../atoms/ImageAtom";
 export default function HeritageCard({ site }) {
   return (
     <article className="heritageCard">
-      <Link className="heritageCardLink" href={`/heritage/${site.slug}/`} aria-label={`View ${site.name}`}>
+      <Link className="heritageCardLink" href={`/heritage/${site.slug}/`} prefetch={false} aria-label={`View ${site.name}`}>
         <ImageAtom src={site.image} alt={site.alt} className="heritageImage" />
         <div className="photoShade"></div>
         <div className="photoTitle">

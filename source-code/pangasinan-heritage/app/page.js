@@ -71,7 +71,7 @@ export default function HomePage() {
           <div className="editorialHeading">
             <span>selected places</span>
 
-            <Link href="/heritage/">
+            <Link href="/heritage/" prefetch={false}>
               view all
             </Link>
           </div>
