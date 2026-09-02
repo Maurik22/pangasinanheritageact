@@ -1,3 +1,6 @@
 export default function ImageAtom({ src, alt, className = "", loading = "lazy" }) {
-  return <img src={src} alt={alt} className={className} loading={loading} />;
+  const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
+  const imagePath = src.startsWith("/") ? `${basePath}${src}` : src;
+
+  return <img src={imagePath} alt={alt} className={className} loading={loading} />;
 }

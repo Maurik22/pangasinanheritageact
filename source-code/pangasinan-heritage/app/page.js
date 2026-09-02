@@ -25,7 +25,7 @@ export default function HomePage() {
         <section className="editorialHero">
 
           <img
-            src={heritageSites[0].image}
+            src={`${basePath}${heritageSites[0].image}`}
             alt={heritageSites[0].alt}
             className="editorialHeroImage"
             loading="eager"
