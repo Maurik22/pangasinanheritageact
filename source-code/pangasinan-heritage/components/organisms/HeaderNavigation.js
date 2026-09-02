@@ -11,9 +11,9 @@ export default function HeaderNavigation() {
       </Link>
 
       <nav className="nav" aria-label="Main navigation">
-        <NavigationItem href={`${basePath}/`}>home</NavigationItem>
-        <NavigationItem href={`${basePath}/heritage/`}>places</NavigationItem>
-        <NavigationItem href={`${basePath}/about/`}>about</NavigationItem>
+        <NavigationItem href="/">home</NavigationItem>
+        <NavigationItem href="/heritage/">places</NavigationItem>
+        <NavigationItem href="/about/">about</NavigationItem>
       </nav>
 
     </header>

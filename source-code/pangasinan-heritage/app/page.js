@@ -6,6 +6,8 @@ import { heritageSites } from "../data/heritage";
 
 
 export default function HomePage() {
+
+  const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
   let featured = [];
 
   for (let i = 0; i < heritageSites.length; i++) {
