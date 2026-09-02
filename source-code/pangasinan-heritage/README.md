@@ -4,7 +4,11 @@ Student Name: Alma L. Fernandez
 
 Selected Framework: Next.js 14 with React
 
+<<<<<<< HEAD
 Live Website: https://YOUR-GITHUB-USERNAME.github.io/pangasinan-heritage/
+=======
+Live Website: https://Maurik22.github.io/pangasinanheritageact/
+>>>>>>> 82ec4e7b903b8119eacdf577fec87d5276d2840a
 
 This is a static website about selected heritage places in Pangasinan. It has a Home page, Places page, About page, and detail pages for six places.
 

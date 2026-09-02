@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+=======
+import Link from "next/link";
+>>>>>>> 82ec4e7b903b8119eacdf577fec87d5276d2840a
 import HeaderNavigation from "../components/organisms/HeaderNavigation";
 import HeritageGrid from "../components/organisms/HeritageGrid";
 import { heritageSites } from "../data/heritage";
@@ -7,7 +11,10 @@ import { heritageSites } from "../data/heritage";
 export default function HomePage() {
 
   const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
+<<<<<<< HEAD
 
+=======
+>>>>>>> 82ec4e7b903b8119eacdf577fec87d5276d2840a
   let featured = [];
 
   for (let i = 0; i < heritageSites.length; i++) {
@@ -25,12 +32,19 @@ export default function HomePage() {
         <section className="editorialHero">
 
           <img
+<<<<<<< HEAD
             src={heritageSites[0].image}
             alt={heritageSites[0].alt}
             className="editorialHeroImage"
             loading="eager"
             width={heritageSites[0].width}
             height={heritageSites[0].height}
+=======
+            src={`${basePath}${heritageSites[0].image}`}
+            alt={heritageSites[0].alt}
+            className="editorialHeroImage"
+            loading="eager"
+>>>>>>> 82ec4e7b903b8119eacdf577fec87d5276d2840a
           />
 
           <div className="heroOverlay"></div>
@@ -73,9 +87,15 @@ export default function HomePage() {
           <div className="editorialHeading">
             <span>selected places</span>
 
+<<<<<<< HEAD
             <a href={`${basePath}/heritage/`}>
               view all
             </a>
+=======
+            <Link href="/heritage/" prefetch={false}>
+              view all
+            </Link>
+>>>>>>> 82ec4e7b903b8119eacdf577fec87d5276d2840a
           </div>
 
           <HeritageGrid sites={featured} />
